@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style_register.css">
+    </head>
+    <body>
+        <div class = "wrap">
+            <div class="intro_bg">
+                <div class="header">
+                    <a href="main.html">
+                        <div class="logo_area"></div>
+                    </a>
+                    <ul class="nav">
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="basket.html">SHOPING</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="register.html">JOIN</a></li>
+                    </ul>
+                </div>
+                <div class="hd_line"></div>
+                <div class="page_name">회원가입</div>
+            </div>
+            <div id="scont">
+                <form name="regForm" class = "reg-form" action = "registerProcess.jsp" method = "post">
+                    <div class = "reg-container">
+                        <p>이름</p>
+                        <input type = "text" class = "text-input" name = "memberNAME">
+                        <p>아이디</p>
+                        <input type = "text" class = "text-input-id" name = "memberID">
+                        <input type="button" class = "check-Btn" value="중복확인" onClick="idCheck(this.form.memberID.value)">
+                        <p>비밀번호</p>
+                        <input type = "password" class = "text-input" name = "memberPW">
+                        <p>비밀번호 확인</p>
+                        <input type = "password" class = "text-input">
+                        <p>이메일</p>
+                        <input type = "text" class = "text-input" name = "memberEMAIL">
+                        <input type = "button" class = "regBtn" onClick = "inputCheck()" value = "회원가입">
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div id="foot">
+                    <ul id="foot_list">
+                        <li>회사소개</li>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>이메일무단수집거부</li>
+                    </ul>
+                    <div id="foot_wr">
+                        <p class="foot_copy">
+                            상표권자 : 주식회사 해뚝
+                            <span></span>
+                            대표자 : 이해울
+                            <span></span>
+                            주소 : 서울시 구로구 경인로 445 ([구]고척동 62-160) 동양미래대학교
+                            <span></span>
+                            상표번호 : 01-2345-6789
+                            <br>
+                            해울뚝배기 주식회사
+                            <span></span>
+                            대표자 : 이해울
+                            <span></span>
+                            대표번호 : 0000-0000
+                            <span></span>
+                            팩스 : 987-6543-2100
+                            <span></span>
+                            이메일 : haedduk@email.com
+                            <br>
+                            <br>
+                            Copyright 2022 해울뚝배기 주식회사. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
